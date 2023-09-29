@@ -1,0 +1,151 @@
+<!DOCTYPE html >
+<html lang="en" class="ht">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./mine.css">
+
+</head>
+
+<body>
+
+
+    
+    <nav class="navbar navbar-expand-lg bg-color py-5 pt-lg-5 ">
+
+        <div class="container apy">
+          <a class=" navbar-brand text-white " href="#"> KNOW FUTURE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="act nav-link " href="my.html">Home</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tera" id="teraa" href="login.html">Login</a>
+              </li>
+                
+           
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      
+
+    <div class="container login">
+        <div class="form-section pt-5 text-black fw-bolder rounded-3">
+            <form>
+                <div class="mb-3">
+                    <h2 class="log"> Login Page</h2>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <label for="Firstname" class="form-label">First Name</label>
+                            <input type="text" class="form-control" aria-describedby="firstname"
+                                placeholder="First Name" id="cls">
+
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="Lastname" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" aria-describedby="lastname" placeholder="Last Name"
+                                id="clss">
+
+                        </div>
+
+
+
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" aria-describedby="emailHelp" id="clsss">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label"> Your Feedback </label>
+                            <textarea class="form-control" rows="3" id="clsa"></textarea>
+                        </div>
+</div>
+</div>
+
+
+            </form>
+
+
+
+            <div class="container pop submi">
+                <button type="submit" class="btn submit " onclick="openpopup()"> Submit </button>              
+                            <div class="popup" id="popup">
+                                <img src="tick.jpg">
+                                <h2 class="text-white hi"> Thank You</h2>
+                                <p class="text-white"> Your details has been successfully submitted. Thanks!</p>
+                                <button type="button" class="popp" onclick="closepopup()"> Ok </button>
+                            </div>
+                            
+                            </div>
+                              
+                          
+                  
+                          
+
+
+        </div>
+    </div>
+
+
+
+
+    
+    
+</body>
+<script>
+    
+    let popup = document.getElementById("popup");
+ let cls = document.getElementById("cls");
+
+    function openpopup(){
+        popup.classList.add("openUp");
+    }
+
+    function closepopup(){
+        popup.classList.remove("openUp");
+        document.getElementById('cls').value = " ";
+        document.getElementById('clss').value = " ";
+        document.getElementById('clsss').value = " ";
+        document.getElementById('clsa').value = " ";
+    }
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+    var a = document.getElementById('teraa'); 
+    function meraa(){
+        var b=  a.getAttribute("nav-link");
+        if ( b === "nav-link"){
+            a.setAttribute("nav-link","tera");
+        }
+    }
+
+</script>
+</html>
